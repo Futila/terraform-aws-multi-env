@@ -1,0 +1,3 @@
+# Copie para backend.hcl (ignorado pelo Git) e preencha com o output do bootstrap:
+#   cp backend.hcl.example backend.hcl
+bucket = "rs-iac-tfstate-123456789012"

@@ -1,0 +1,33 @@
+# Diretórios locais do Terraform (providers baixados, módulos)
+.terraform/
+
+# State NUNCA vai para o Git: contém IDs, IPs e às vezes segredos em texto puro
+*.tfstate
+*.tfstate.*
+
+# Logs de crash
+crash.log
+crash.*.log
+
+# tfvars com dados sensíveis ou pessoais (os terraform.tfvars dos ambientes SÃO versionados,
+# pois só têm valores não sensíveis)
+*.auto.tfvars
+secrets.tfvars
+*.secret.tfvars
+
+# Config de backend com o nome do bucket (contém o ID da conta)
+backend.hcl
+
+# Planos salvos podem conter valores sensíveis
+*.tfplan
+tfplan
+
+# Overrides locais
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config
+.terraformrc
+terraform.rc
